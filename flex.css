@@ -1,0 +1,134 @@
+  .nav {
+    margin: 0px;
+    margin-top: 0px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.logo {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+    cursor: default;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+
+.login {
+    margin-right: 10px;
+    background-color: grey;
+    color: white;
+    border: none;
+    width: 70px;
+    height: 25px;
+    transition: 0.5s;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+li a:hover {
+    color: grey;
+}
+
+.login:hover {
+    color: grey;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.login:active {
+    background-color: grey;
+} 
+
+.profil {
+    display: none;
+}
+
+.navbar {
+    display: none;
+}
+
+
+/* phone */
+
+@media screen and (max-width:640px) {
+    .navbar {
+        display: flex;
+        bottom: 0px;
+        width: 100%;
+        background-color: #efefef;
+        left: 0px;
+        position: absolute;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul li .icon {
+        margin-right: 50px;
+    }
+    
+    .navdiv {
+        justify-content: space-between;
+        justify-items: center;
+    }
+   
+    .btn {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 5px;
+    }
+
+    .pilihan {
+        display: none;
+    }
+
+    .profil {
+        display: block;
+    }
+
+    .profil {
+        width: 25px;
+        height: 25px;
+    }
+
+    .profil:active {
+        background-color: white;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon:active {
+        background-color: rgb(95, 95, 252);
+        border-radius: 30%;
+    }
+}

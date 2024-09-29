@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    margin-top: 75px;
+    gap: 20px;
+    grid-template-areas: 
+        "header header header"
+        "none content -"
+        "footer footer footer"
+}
+
+.header {
+    /* background-color: red; */
+    grid-area: header;
+}
+
+.content {
+    /* background-color: blue; */
+    grid-area: content;
+}
+
+.footer {
+    /* background-color: green ; */
+    grid-area: footer;
+}

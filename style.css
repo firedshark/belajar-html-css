@@ -1,0 +1,64 @@
+.desk {
+    top: 180px;
+    opacity: 0;
+    transition: 0.5s;
+    height: 500px;
+}
+
+.desk:hover {
+    opacity: 1;
+    background-color: white;
+    color: black;
+}
+
+.konten {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: 2px solid black;
+}
+
+.teks-judul {
+    text-decoration: none;
+    color: black;
+}
+
+.teks-judul:hover {
+    color: blue;
+}
+
+.img-size {
+    min-width: 300px;
+    min-height: 150px;
+    max-width: 300px;
+    max-height: 150px;
+}
+
+@media screen and (max-width:640px) {
+    .tranding {
+        display: none;
+    }
+
+    .berita {
+        margin-top: 50px;
+    }
+
+    .teks-judul h1 {
+        font-size: medium;
+    }
+
+    .img-size {
+        min-width: 200px;
+        min-height: 100px;
+        max-width: 200px;
+        max-height: 100px;
+    }
+
+    .akhir {
+        margin-bottom: 75px;
+    }
+
+    .footer {
+        margin-bottom: 60px;
+    }
+}
